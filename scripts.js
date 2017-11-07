@@ -26,7 +26,7 @@ $(document).ready(function() {
 					term: request.term,
 					attribute: 'movieTerm',
 					entity: 'movie',
-					limit: 10
+					limit: 4
 				},
 				success: function(data) {
 					response($.map(data.results, function(item) {
