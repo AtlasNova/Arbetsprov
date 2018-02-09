@@ -5,8 +5,8 @@ $(document).ready(function() {
 		var rightNow = new Date();
 		var time = rightNow.toISOString().slice(0,16).replace(/T/," ");
 
-		var element = $("<div class='searches-item'></div>");
-		$("#searches").prepend(element);
+		var element = $("<li class='searches-item'></li>");
+		$("#searches ul").prepend(element);
 		element.append("<div class='searches-item-margin'>&nbsp;</div>");
 		element.append("<div class='searches-item-keyword'><div class='inner'>" + keyword + "</div></div>");
 		element.append("<div class='searches-item-margin'>&nbsp;</div>");

@@ -83,7 +83,8 @@ input:focus, select:focus, textarea:focus, button:focus {
 	color: rgb(179,188,199);
 }
 
-#searches-bg {
+#searches {
+	display:block;
 	background-color: rgba(255,255,255, 0.1);
 	width: 100%;
 	min-height: 100px;
@@ -92,14 +93,16 @@ input:focus, select:focus, textarea:focus, button:focus {
 	padding: 40px 0;
 }
 
-#searches {
-	color: rgb(255,255,255);
+#searches ul {
 	max-width: 700px;
 	width: 90%;
 	margin: auto;
+	display: block;
+	list-style-type: none;
 }
 
 .searches-item > div {
+	color: rgb(255,255,255);
 	height: 87px;
 	display: inline-block;
 	float: left;
